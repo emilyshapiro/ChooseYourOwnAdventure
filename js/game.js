@@ -26,21 +26,67 @@ var game = {
             message: "You come across a fire monster or something!",
             choices: [
                 {
-                    text: "Start over",
+                    text: "Turn Back",
                     nextLevel: "start",
                 },
+                
+                {
+                    text: "Go Forward",
+                    nextLevel: "field",
+                    
+                },
             ]
-        },
+        
+         },
+    
+      
 
         field: {
-            message: "Some adventurer you are...",
+            message: "The field is full of beautiful poppies, do you....",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Pick a pretty flower",
+                    nextLevel: "loser",
                 },
+                {
+                    text: "Forge Ahead",
+                    nextLevel: "ocean",
+                    
+                },
+                
             ]
         },
+        
+        
+        ocean: {
+            message: "You have arrived at the choppy sea, do you?...",
+            choices: [
+                {
+                    text: "Swim Across",
+                    nextLevel: "loser",
+                    
+                },
+                
+                {
+                    text: "Build a Boat",
+                    nextLevel: "winner"
+                    
+                },
+                
+                ]
+                
+        },
+                
+        winner: {
+            message: "You have reached the pot of gold!"
+            
+        },
+        
+        loser: {
+          message: "Uh oh! You got eaten by a monster!"  
+        },
+            
+            
+        },
 
-    }
 };
