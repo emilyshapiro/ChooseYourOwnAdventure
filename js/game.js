@@ -42,6 +42,8 @@ var game = {
       
 
         field: {
+            background_image: "poppy.jpg",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
             message: "The field is full of beautiful poppies, do you....",
             choices: [
                 {
@@ -59,6 +61,7 @@ var game = {
         
         
         ocean: {
+            background_image: "ocean.jpeg",
             message: "You have arrived at the choppy sea, do you?...",
             choices: [
                 {
@@ -78,11 +81,13 @@ var game = {
         },
                 
         winner: {
+            background_image: "Pot-of-Gold-672x372.jpg",
             message: "You have reached the pot of gold!"
             
         },
         
         loser: {
+        background_image: "monster.jpg",
           message: "Uh oh! You got eaten by a monster!"  
         },
             
